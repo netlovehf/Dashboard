@@ -26,13 +26,6 @@
       ]
     },
     {
-      "key": "唐人街TV",
-      "name": "唐人街TV",
-      "type": 9,
-      "api": "https://www.tangrenjie.tv/api.php/provide/vod/at/xml",
-      "playUrl": "",
-    },
-    {
       "key": "jpys_spider",
       "name": "极品影视",
       "type": 2,
