@@ -26,3 +26,6 @@ jobs:
         # static_list: 'CatVodTVSpider,Public'
         # black_list: 'repo_name,repo_name2'
         # white_list: CatVodTVSpid
+        account_type: user
+        static_list: 'CatVodTVSpider,Public'
+        force_update: true
