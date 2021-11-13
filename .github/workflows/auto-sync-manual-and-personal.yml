@@ -19,5 +19,5 @@ jobs:
         dst: gitee/Tangsan99999
         dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
         dst_token: ${{ secrets.GITEE_TOKEN }}
-        static_list: 'CatVodTVSpider'
+        static_list: 'CatVodTVSpider,Public'
         force_update: true
