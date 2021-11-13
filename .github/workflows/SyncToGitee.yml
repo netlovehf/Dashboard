@@ -1,9 +1,11 @@
 on:
+  push:
+      branches: master
   schedule:
     # * is a special character in YAML so you have to quote this string
     # UTC 17:00 -> CST (China) 1:00, see https://datetime360.com/cn/utc-cst-china-time/
-    - cron: '*/5 * * * *'
-        branches: master
+    - cron: '*/1 * * * *'
+
     
 name: Sync
 
