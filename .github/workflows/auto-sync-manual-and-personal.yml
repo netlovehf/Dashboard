@@ -4,20 +4,24 @@ on:
     branches: master
   schedule:
     # * is a special character in YAML so you have to quote this string
-    # UTC 17:00 -> CST (China) 1:00, see https://datetime360.com/cn/utc-cst-china-time/
-    - cron: '*/1 * * * *'
-name: Mirror GitHub Auto Queried Repos to Gitee
+    # UTC 20:00 -> CST (China) 4:00, see https://datetime360.com/cn/utc-cst-china-time/
+    - cron: '*/5 * * * *'
+  pull_request:
+    branches: master
+    
+name: Mirror GitHub Selected Repos to Gitee
 jobs:
   run:
-    name: Sync-GitHub-to-Gitee
+    name: Sync-Gitee-Manual-and-Personal
     runs-on: ubuntu-latest
     steps:
-    - name: Mirror the Github repos to Gitee.
+    - name: Mirror the sigminer repos to Gitee.
       uses: Yikun/hub-mirror-action@master
       with:
         src: github/Tangsan99999
         dst: gitee/Tangsan99999
         dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
         dst_token: ${{ secrets.GITEE_TOKEN }}
+        account_type: user
         static_list: 'CatVodTVSpider,Public'
         force_update: true
