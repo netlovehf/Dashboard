@@ -2,7 +2,7 @@ name: Sync Github Repos To Gitee
 
 on:
   schedule:
-    - cron: '*/1 * * * *'  #每天北京时间 9点运行
+    - cron: '* * * * *'  #每天北京时间 9点运行
     branches:
       - master
 
